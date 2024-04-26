@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Consulta App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <h1>
+      Login
+    </h1>
+    <br>
+    <ion-input
+      class="input-1"
+      label="Email"
+      label-placement="floating"
+      fill="outline"
+      placeholder="email@domain.com"
+      type="email">
+    </ion-input>
+      <br><br>
+    <ion-input
+      class="input-2"
+      label="Password"
+      label-placement="floating"
+      fill="outline"
+      placeholder="*******"
+      type="password">
+    </ion-input>
+    <ion-button class="button-1" shape="round" (click)="tabsPage()">Entrar</ion-button>
+    <ion-button class="button-2" shape="round" (click)="cadastroPage()">Cadastrar</ion-button>
+  </div>
+</ion-content>

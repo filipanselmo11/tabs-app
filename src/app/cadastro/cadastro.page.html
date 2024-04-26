@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastro de Informações do Profissional da Saúde</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <h3>
+      Por favor preencha os dados abaixo
+    </h3>
+    <ion-input
+      class="input-nome"
+      label="Nome"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Fulano(a) de Tal"
+      type="text">
+    </ion-input>
+      <br><br>
+    <ion-input
+      class="input-email"
+      label="Email"
+      label-placement="floating"
+      fill="outline"
+      placeholder="seuemail@domain.com"
+      type="email">
+    </ion-input>
+    <br><br>
+    <ion-input
+      class="input-password"
+      label="Password"
+      label-placement="floating"
+      fill="outline"
+      placeholder="********"
+      type="password">
+    </ion-input>
+    <br><br>
+    <ion-input
+      class="input-tipo"
+      label="Tipo de Profissional"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Médico(a), Enfermeiro(a), Dentista...."
+      type="text">
+    </ion-input>
+    <ion-button
+      class="button-cadastro"
+      shape="round"
+      (click)="loginPage()"
+    >Cadastrar</ion-button>
+  </div>
+</ion-content>
